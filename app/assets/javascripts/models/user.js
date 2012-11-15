@@ -5,5 +5,6 @@ ViewbookUsers.User = DS.Model.extend({
   email: DS.attr('string'),
   createdAt: DS.attr('date'),
   country: DS.attr('string'),
-  domainName: DS.attr('string')
+  domainName: DS.attr('string'),
+  subscription: DS.hasMany("ViewbookUsers.Subscription")
 });

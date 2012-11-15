@@ -1,4 +1,4 @@
 ViewbookUsers.Subscription = DS.Model.extend({
-  user: DS.attr('references'),
-  status: DS.attr('string')
+  status: DS.attr('string'),
+  user: DS.belongsTo("ViewbookUsers.User")
 });
